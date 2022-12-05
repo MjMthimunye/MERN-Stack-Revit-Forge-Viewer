@@ -1,0 +1,20 @@
+{
+  "name": "mongoserver",
+  "version": "1.0.0",
+  "description": "MongoDB node js server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacobian Dev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.1",
+    "request": "^2.88.2"
+  }
+}
